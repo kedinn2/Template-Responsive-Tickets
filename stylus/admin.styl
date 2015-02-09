@@ -1,0 +1,124 @@
+@import "normalize.styl"
+@import "fonts.styl"
+@import 'nib/vendor'
+
+vendor-prefixes = o ms moz webkit
+
+gris_claro = #E4E9EB
+gris_footer = #2A3237
+gris_claro_icon = #C7C7C7
+rosado = #D8143C
+active_menu = #171C1E
+
+figure
+	margin 0
+html
+body
+	font-size 16px
+	font-family 'Roboto', sans-serif
+	background-color gris_claro
+.header
+	background-color gris_footer
+	color white
+	height 100%
+	float left
+	position fixed
+
+.logo
+	background-color rosado
+	height 3em
+	padding 1.5em
+	figure
+		a
+			text-decoration none
+			h1
+				color white
+				margin 0
+				text-transform uppercase
+				font-size 2em
+.main-wrapper
+	.top-search
+		margin-left 14.8em
+		padding 0.5em
+		overflow hidden
+		form
+			position relative
+			input
+				width 89%
+				height 2.1em
+				padding 0 0.7em
+				background-color gris_claro
+				border-radius 0.5em
+				border 0.1em solid gris_claro_icon
+				&:focus
+					outline 0px
+			span 
+				position absolute
+				right 1.2em
+				top 0.1em
+				color gris_claro_icon
+				font-size 2em
+
+	.top-search
+	.elements
+		background-color white
+	.elements
+		margin 1em 1em 0 16em
+		padding 1em 1em 2.3em 1em
+		position relative
+		table
+			width 100%
+			tr
+				border-bottom 0.1em solid gris_claro_icon
+				margin 0.6em
+				display block
+				th
+				td
+					margin 0 1em
+					display inline-block
+					width 12em
+					text-align left
+
+.menu
+	ul
+		margin 2em 0 0 -2.5em
+		li
+			list-style none
+			margin 0.5em 0
+			padding 1em
+			&:hover
+					background-color active_menu
+		.active
+				background-color active_menu
+			a
+				text-decoration none
+				color white
+				text-transform uppercase
+				span
+					margin-right 0.6em
+
+
+
+				
+
+//OOSS
+
+.column2
+	float left
+	width 49%
+
+.button-pink
+	background rosado
+	float right
+	position relative
+	right 1em
+	padding 0.5em 1em
+	bottom 2.3em
+	a 
+		text-decoration none
+		color white
+		text-transform uppercase
+		font-size 1em
+
+
+

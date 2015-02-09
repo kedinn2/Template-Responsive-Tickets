@@ -1,0 +1,688 @@
+@import "normalize.styl"
+@import "fonts.styl"
+
+
+/*FONTS
+Roboto sans-serif
+*/
+
+//COLORS
+
+azul_facebook = #2E4C8D
+celeste_twitter = #2499C8
+color_oscuro = #2A3237
+gris_claro = #E4E9EB
+gris_font_muyoscuro = #2A3237
+gris_font_oscuro = #6D7177
+gris_footer = #2A3237
+rosado = #D8143C
+rosado_claro = #E8496F
+rosado_oscuro = #BF2E4F
+
+figure 
+	margin 0
+body
+	font-size 16px
+	font-family 'Roboto', sans-serif
+	background #e4e9eb
+.header
+	background-color #d8143c
+	height 51px
+	 position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1001;
+.logo
+
+	color #fff
+	line-height 51px
+	position absolute
+	float left
+	left 44.5%
+	h2
+		margin 0
+		padding 0
+		a
+			color white
+			text-decoration none
+.menu
+	display none
+
+
+
+#left-menu-trigger, #navbar {
+  float: left;
+  display: block;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+#right-menu-trigger {
+  float: right;
+}
+
+#left-menu {
+  position: fixed;
+  top: 50px;
+  bottom: 0;
+  left: -270px;
+  width: 270px;
+  background: #ED3A5F;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-transition: -webkit-transform 300ms;
+          transition: transform 300ms;
+  z-index: 999;
+}
+
+#left-menu ul li a {
+    text-decoration: none;
+    color: white; 
+    padding: 10.5px 25px;
+    display:block;
+}
+#left-menu ul a:hover {
+    background: #EA2C53;
+}
+#left-menu ul {
+    margin: 0; 
+    padding: 0;
+    width:100%;
+    list-style-type: none;
+}
+
+#right-menu {
+  left: auto;
+  right: -270px;
+}
+
+.push-270-to-right {
+  -webkit-transform: translate3d(270px, 0, 0);
+          transform: translate3d(270px, 0, 0);
+}
+
+.push-270-to-left {
+  -webkit-transform: translate3d(-270px, 0, 0);
+          transform: translate3d(-270px, 0, 0);
+}
+
+
+
+
+.button-menu
+	color white
+	font-size 1em
+	margin-left 0
+	line-height 51px
+	font-size 2.5em
+	text-decoration none
+	cursor: pointer;
+.social-icon
+	position: relative;
+	float: right;
+	a
+		padding-left 0.4em
+		color white
+		text-decoration none
+		font-size 2em
+		line-height 51px
+
+#defaultCountdown
+	max-width 500px
+	height 45px
+	margin 0 auto
+
+
+.is-countdown
+
+.countdown-rtl
+	direction rtl
+.countdown-holding span
+	color #888
+	
+.countdown-row
+	clear both
+	width 100%
+	padding 0px 2px
+	text-align center
+	
+.countdown-show1 .countdown-section 
+	
+	width 98%
+.countdown-show2 .countdown-section 
+	width 48%
+.countdown-show3 .countdown-section 
+	width 32.5%
+.countdown-show4 .countdown-section 
+	width 24.5%
+.countdown-show5 .countdown-section 
+	width 19.5%
+.countdown-show6 .countdown-section 
+	width: 16.25%
+.countdown-show7 .countdown-section
+	width 14%
+.countdown-section 
+	
+	display block
+	float left
+	font-size 75%
+	text-align center
+.countdown-amount
+	font-size 200%
+.countdown-period 
+	display block
+
+.countdown-descr 
+	display block
+	width 100%
+
+	
+.main-event
+	background rgba(0, 0, 0, 0.47)
+	height 400px
+	position relative
+	p
+		margin-top 20px
+		padding 0
+		color white
+.image-main-event
+	width 100%
+	position absolute
+	top 0
+	z-index -50
+.event-container
+	padding-top 3em
+	margin 0 auto
+.main-event-title , .main-event-date
+	text-transform uppercase
+	text-align center
+.main-event-title
+	font-weight 500
+	font-size 3.1rem
+.main-event-date
+	font-size 2.3rem
+	&:before
+		content "═════"
+	&:after
+		content "═════"
+.date-count
+	font-size 2em
+	text-align center
+	color white
+.search-event
+
+	position relative
+	margin 2em auto
+	moz-border-radius 50px
+	-webkit-border-radius 50px
+	border-radius 50px
+	margin-top -50px
+	padding 20px
+	background #e4e9eb
+	max-width 700px
+	input[type="text"]
+		-webkit-box-sizing border-box
+		-moz-box-sizing: border-box
+		box-sizing border-box
+		-moz-border-radius 50px
+		-webkit-border-radius 50px
+		border-radius 50px
+		-webkit-box-shadow: inset 0px 0px 0px 1px rgba(255,255,255,0.1)
+		box-shadow inset 0px 0px 0px 1px rgba(255,255,255,0.1)
+		background-color: rgba(255,255,255,0.03)
+		border 6px solid #d8143c
+		height 70px
+		color #2a3237
+		float none
+		font-size 18px
+		text-indent 20px
+		padding 0px 6px
+		width: 100%
+		&:focus
+			outline 0px
+	button
+		position absolute
+		right 1em
+		width 50px
+		height 50px
+		border 0
+		background #d8143c
+		color #fff
+		font-size 2em
+		border-radius 50%
+		top 30px
+		&:focus
+			outline 0px
+		&:hover
+			background #d8143c
+.main-wrapper
+	background-color gris_claro
+.social-event
+	margin 0 auto
+	text-align center
+	padding 2% 0
+	border-bottom 3px solid #D0D0D0
+.button-social
+	padding: 3% 0%
+.button-fb
+	background-color azul_facebook
+	color white
+	text-decoration none
+	width 10%
+	padding 0.8% 4%
+	margin 2%
+.button-twitter
+	background-color celeste_twitter
+	color white
+	text-decoration none
+	width 10%
+	padding 0.8% 4%
+	margin 2%
+.social-detail
+	text-align center
+	color gris_font_oscuro
+	font-size 1.5em
+	width 67%
+	margin 0 auto
+.wrapper-events
+	background-color gris_claro
+.events
+	margin 0 0 0 -2.7% !important
+	clear both
+	content ""
+	display table
+.event
+	background-color white
+	float left
+	margin-left 2.7%
+	width 269px
+	height 100%
+	margin-top 2.5%
+	border-bottom 5px solid transparent
+	transition all 0.3s ease
+	border-color #CBCBCB
+	border-radius 5px
+.event
+	&:hover
+		background-color #FFD36F
+		
+.head-event
+	border-bottom 0.4em solid rosado
+	position relative
+.image
+	height 269px
+.detail-event
+	position absolute
+	margin 0 11%
+	font-size 1.4em
+	color white
+	text-align center
+	bottom 3%
+	span
+		background-color #000000
+		padding 1px 6px
+		font-weight 500
+.enable-mobile
+	display none !important
+.footer-event
+	
+	position relative
+	height 7.5em
+	p
+		margin 0 3%
+		color gris_font_muyoscuro
+		font-weight 500
+		padding 1% 0
+		span
+			width 9%
+			display block
+			float left
+			padding-top 1.4%
+.line-button
+	text-decoration: none;
+	color rosado
+	font-weight 500
+	text-transform uppercase
+	position absolute
+	right 0
+	bottom 0
+	
+	padding 1%
+	padding-right 2%
+.line-button
+	&:hover
+		text-decoration: underline;
+.wrapper-newsletter
+	background-color #d8143c
+	margin-top 2em
+	clear both
+.newsletter
+	margin 0 auto
+	background rosado
+	width 550px
+	color white
+	overflow hidden
+	padding 1.8em 0
+	text-align center
+	.icon-mail
+		float left
+		font-size 4.5em
+		width 1.2em
+	h2
+		text-transform uppercase
+		font-weight 400
+		margin 0
+	p
+		margin 0
+		text-align center
+	form
+		margin-top 1em
+		
+		input[type="text"]
+			width 65%
+			height 2.8em
+			text-indent 10px
+			padding 0 6px
+			border-radius 3px
+			border 0
+			&:focus
+				outline 0px
+				color gris_font_oscuro
+		input[type="submit"]
+			position absolute
+			margin-left -3.8em
+			margin-top 4px
+			border none
+			background: #d8143c
+			height 2.3em
+			cursos pointer
+			border-radius 3px
+			&:focus
+				outline 0px
+
+.footer
+	background-color gris_footer
+	position relative
+	overflow hidden
+	padding 1em 0
+	.column4
+		border-right 0.15em solid gris_font_oscuro
+		&:nth-child(4)
+			border-right none
+		ul
+			li
+				color white
+				a
+					text-decoration none
+					color white
+
+.column4
+	float left
+	width 23.4%
+.goTop
+	a
+		color rosado
+		text-decoration none
+		font-size 3em
+		cursor pointer
+		position absolute
+
+
+///
+
+.wrapper-event
+	background-color gris_claro
+	padding 2em 0
+	overflow hidden
+.article-event
+	width 74%
+	margin-right 2%
+	background-color white
+.sidebar
+	width 22%
+	.event
+		margin-top 0
+		margin-bottom 15px
+.title-event	
+	font-size 2em
+	color color_oscuro
+	border-bottom gris_claro solid 0.18em
+	margin 0.2em
+	h4
+		margin 0.5em
+.primary-event
+	overflow hidden
+.featured-image
+	margin 1em 2em
+.description-event
+	margin 2em
+	h5 
+		text-align center
+		font-size 2em
+		color gris_font_muyoscuro
+	p 
+		text-align justify
+		text-justify inter-word
+	.map
+		margin 2.5em 0
+.details-event
+	margin 1em
+	p
+		font-size 1em
+		margin 0.5em
+		span
+			width 2em
+			display block
+			float left
+			font-weight 600
+			padding-top 0.3em
+	.description
+		margin 2em 0
+		padding-bottom 3em
+		
+//OOSS
+.left
+	float left
+.right
+	float right
+.container 
+	max-width 1176px
+	margin-right auto
+	margin-left auto
+	padding-left 15px
+	padding-right 15px
+.container-two 
+	max-width 1176px
+	margin-right auto
+	margin-left auto
+	padding-left 15px
+	padding-right 15px
+.relative
+	position relative
+
+//BOTONES
+.button-pink
+	background rosado
+	position absolute
+	bottom 0
+	right 7em
+	padding 0.6em 0.8em
+	a 
+		text-decoration none
+		color white
+		text-transform uppercase
+		font-size 1em
+
+@media screen and (max-width: 604px)
+	header
+		width 100%
+		.button-menu
+			font-size 2.5em
+			margin-left 0
+
+		.social-icon
+			display none
+		.button-search
+			position absolute
+			right 0.2em
+			color white
+			top 0.3em
+			text-decoration none
+			font-size 2em
+
+	.main-event
+		max-height 300px
+		img
+			width 100%
+		.event-container
+	
+			max-height 100px
+			.main-event-detail
+				.main-event-title
+					font-size 1.5em
+				.main-event-date
+					font-size 1em
+			.date-count
+				font-size 1.3em
+			.search-event
+				input[type='text']
+					height 1.5em
+				button
+					height 1.3em
+					width 1.3em
+	.main-wrapper
+		.social-event
+			width 100%
+			.button-twitter
+			.button-fb
+				padding 2% 6%
+				margin 1%
+		.social-detail
+			p
+				font-size 0.7em
+
+	.wrapper-events
+		.events
+			width 100%
+			.event
+				max-width 480px
+				width 100%
+				overflow hidden
+				.detail-event
+					display none
+				.head-event
+					float left
+					width 26%
+					height 20%
+					border-bottom none
+					figure
+						height 100%
+						max-height 116px
+						img
+							width 100%
+							max-height 120px
+				.footer-event
+					margin-left 26%
+					font-size 0.9em
+					padding-top 0.8em
+					.line-button
+						right 0.4em
+						padding 1%
+						font-size 1em
+	.wrapper-newsletter
+		.newsletter
+		.container
+			width 100%
+		.newsletter
+			padding 0
+			p
+				padding-top 1em
+			form
+				margin-top 1em
+				margin-bottom 1em
+
+				input[type='text']
+					width 80%
+	.footer
+		.container
+			width 100%
+			.column4
+				width 100%
+				border-bottom 0.1em solid gris_claro
+				&:nth-child(4)
+					border-bottom none
+					padding-bottom 0
+					margin-bottom 0
+			.button-pink
+				right 0
+				bottom 1em
+	.wrapper-event
+		.container
+			width 100%
+			.article-event
+				display block
+				width 100%
+				.title-event 
+					font-size 1.4em
+					text-align center
+				.primary-event
+					.featured-image
+						margin 0
+						width 100%
+						float none
+				.description-event
+					.map
+						max-width 320px
+						img
+							width 100%
+			.sidebar
+				display block
+				width 100%
+				float none
+				.event
+					width 100%
+					.head-event
+						width 100%
+						max-height 320px
+						.image
+							margin 0
+							width 100%
+							img
+								width 100%
+					.footer-event
+						.line-button
+							padding 4%
+	.container
+		max-width 570px
+	.disable-mobile
+		display none !important
+
+@media screen and (max-width: 604px)
+	.enable-mobile
+		display block !important
+@media (max-width: 1240px)
+	.main-event
+		.event-container
+			.main-event-detail
+				.main-event-title
+					font-size 1.2em
+	.main-event
+		.event-container
+			.date-count
+				font-size: 1.3em;
+	.main-event
+		max-height 300px
+	.container
+		max-width 856px
+@media (max-width: 904px)
+	.main-event-date:before
+		content none
+	.main-event-date:after
+		content none
+		
+
+	.main-event 
+		max-height 300px
+	.container
+		max-width 570px

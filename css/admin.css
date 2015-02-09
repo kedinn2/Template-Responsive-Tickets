@@ -1,0 +1,196 @@
+
+@font-face {
+    font-family: 'icomoon';
+    src: url("../fonts/icomoon.eot?-2uic09");
+    src: url("../fonts/icomoon.eot?#iefix-2uic09") format('embedded-opentype'), url("../fonts/icomoon.woff?-2uic09") format('woff'), url("../fonts/icomoon.ttf?-2uic09") format('truetype'), url("../fonts/icomoon.svg?-2uic09#icomoon") format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon-icono:before {
+    content: "\e603"}
+.icon-phone:before {
+    content: "\e608"}
+.icon-mail:before {
+    content: "\e609"}
+.icon-user:before {
+    content: "\e60a"}
+.icon-user-add:before {
+    content: "\e60b"}
+.icon-location:before {
+    content: "\e604"}
+.icon-thumbsup:before {
+    content: "\e60c"}
+.icon-thumbsdown:before {
+    content: "\e60d"}
+.icon-house:before {
+    content: "\e60e"}
+.icon-search:before {
+    content: "\e611"}
+.icon-printer:before {
+    content: "\e60f"}
+.icon-cog:before {
+    content: "\e610"}
+.icon-clock:before {
+    content: "\e605"}
+.icon-calendar:before {
+    content: "\e606"}
+.icon-logout:before {
+    content: "\e613"}
+.icon-list:before {
+    content: "\e607"}
+.icon-docs:before {
+    content: "\e614"}
+.icon-arrow-up:before {
+    content: "\e612"}
+.icon-twitter:before {
+    content: "\e600"}
+.icon-facebook:before {
+    content: "\e601"}
+.icon-googleplus:before {
+    content: "\e602"}
+.headers figure {
+    margin: 0;
+}
+html, body {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #e4e9eb;
+}
+.headers {
+    background-color: #2a3237;
+    color: #fff;
+    position: fixed;
+}
+.headers .logito {
+    background-color: #d8143c;
+  
+    padding: 1.5em;
+    text-align: center;
+}
+.col-md-2{
+padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+.headers .logito figure a {
+    text-decoration: none;
+}
+.headers .logito figure a h1 {
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+.main-wrappers{
+    background: #fff;
+    min-height: 640px !important;
+}
+
+.main-wrappers .top-search .button-pink {
+    float: right;
+    margin-left: 2em;
+}
+
+.main-wrappers .top-search {
+   
+    padding: .5em 0;
+    overflow: hidden;
+}
+.main-wrappers .top-search form {
+    position: relative;
+}
+.main-wrappers .top-search form input {
+width: 89%;
+height: 2.1em;
+padding: 0 .7em;
+-webkit-border-radius: .3em;
+border: .1em solid #ECAF41;
+
+}
+.main-wrappers .top-search form input:focus {
+    outline: 0;
+}
+.main-wrappers .top-search form span {
+position: absolute;
+right: 1.7em;
+top: .04em;
+color: #ECAF41;
+font-size: 2em;
+}
+.main-wrappers .top-search, .main-wrapper .elements {
+    background-color: #f7f7f7;
+}
+.main-wrappers .elements {
+    margin: 1em 0;
+    position: relative;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+
+
+}
+.usuario{
+    display: table;
+content: " ";
+width: 100%;
+border-bottom: 2px solid #ECAF41;
+margin-bottom: 1em;
+}
+.usuario ul{
+     float: right;
+}
+.usuario li{
+
+margin-right: 18px;
+position: relative;
+display: inline-block;
+}
+.row{
+    margin: 0 !important;
+}
+.headers .menu{
+
+    display: block
+}
+
+.headers .menu ul {
+    margin: 0;
+    display: block;
+    padding: 0;
+}
+.headers .menu ul li {
+    list-style: none;
+    margin: .5em 0;
+    padding: 1em;
+}
+.headers .menu ul li:hover {
+    background-color: #171c1e;
+}
+.headers .menu ul .active {
+    background-color: #171c1e;
+}
+.headers .menu ul a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.headers .menu ul a span {
+    margin-right: .6em;
+}
+.column2 {
+    float: left;
+    width: 49%}
+.column3 {
+    float: right;
+    width: 49%}
+
